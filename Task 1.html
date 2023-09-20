@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+<title>Task 1: Simple Webpage</title>
+<script type="text/javascript">
+    
+    function changeColor(value){
+      alert("You have chosen "+value)
+    }
+    function setBackgroundColor(newColor){
+        document.body.style.backgroundColor=newColor;
+    }
+  </script>
+    </head>
+    <body>
+        <style>
+            body{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.fixed-header{
+    width:100%;
+    position:fixed;
+    background:#333;
+    padding:10px;
+    color:white;
+}
+.fixed-header{
+    top:0;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+p{
+color:white;
+    text-decoration: none;
+    padding:7px 25px;
+    display:inline-block;
+}
+
+a:hover{
+    color: black;
+    background-color: brown;
+}
+a:visited{
+    background-color: blue;
+}
+
+
+        </style>
+        <div class="fixed-header">
+            <div class="container">
+               <a href="javascript:location.reload (true)"><p>Home</p></a>
+               <a href><p>About</p></a>
+               <a href><p>Contact Us</p></a>
+            </div>
+        </div>
+        <br>
+   <br>
+   <h4>Choose the color you would like:</h4>
+   <form class="" action="index.html" method="post">
+     <input type="radio" name="color" value="Red" onclick="changeColor(value);" onchange="setBackgroundColor(this.value)">Red <br>
+     <input type="radio" name="color" value="Blue" onclick="changeColor(value);" onchange="setBackgroundColor(this.value)">Blue <br>
+     <input type="radio" name="color" value="Orange" onclick="changeColor(value);" onchange="setBackgroundColor(this.value)">Orange <br>
+     <input type="radio" name="color" value="Green" onclick="changeColor(value);" onchange="setBackgroundColor(this.value)">Green<br>
+     <input type="radio" name="color" value="Purple" onclick="changeColor(value);" onchange="setBackgroundColor(this.value)">Purple<br>
+     <input type="radio" name="color" value="Yellow" onclick="changeColor(value);" onchange="setBackgroundColor(this.value)">Yellow<br>
+
+   </form>
+    </body>
+</html>
